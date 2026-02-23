@@ -29,3 +29,10 @@ class Solution:
             else:
                 stack.append(char)
         return not stack
+    
+if __name__ == "__main__":
+    test_strings = ["()", "()[]{}", "(]", "({[]})", "([)]"]
+
+    sol = Solution()
+    for s in test_strings:
+        print(f"{s}: {sol.isValid(s)}")
